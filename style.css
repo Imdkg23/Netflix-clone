@@ -1,0 +1,121 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+main {
+    background-image: url('IN-en-20240923-TRIFECTA-perspective_74e21c19-980e-45ef-bd6c-78c1a6ce9381_large.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.box {
+    height: 100vh;
+    opacity: 0.8;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.797);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding-top: 80px; /* Space for the navbar */
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 80px;
+    background-color: rgba(0, 0, 0, 0.7);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    z-index: 1000; /* Ensure it stays above other content */
+}
+
+nav svg {
+    width: 120px; /* Adjust size as needed */
+    height: auto;
+}
+
+button {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background-color: white;
+    color: red;
+    transform: scale(1.05);
+}
+
+h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 20px;
+    margin-bottom: 40px;
+    max-width: 600px;
+}
+
+/* Email input styling */
+.email-input {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input[type="email"] {
+    padding: 10px;
+    border: none;
+    border-radius: 20px 0 0 20px;
+    font-size: 16px;
+    width: 300px;
+    outline: none;
+    transition: box-shadow 0.3s ease;
+    opacity: 0.8;
+
+}
+
+input[type="email"]:focus {
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.8);
+    
+}
+
+.get-started-btn {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 0 20px 20px 0;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.get-started-btn:hover {
+    background-color: white;
+    color: red;
+    transform: scale(1.05);
+}
